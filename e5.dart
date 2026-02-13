@@ -13,11 +13,11 @@ void main() {
   for (var i in a) {
     for (var j in b) {
       if (i == j) {
-        x.add(i);
+        if (!x.contains(i)) {
+          x.add(i);
+        }
       }
     }
   }
   print(x);
 }
-
-// List<dynamic> count() {}
