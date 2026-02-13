@@ -6,7 +6,19 @@
 import 'dart:io';
 
 void main() {
+<<<<<<< HEAD
   stdout.write('enter a random number');
   int? a = int.parse(stdin.readLineSync()!);
   print(a);
+=======
+  stdout.write('enter a random number \n');
+  double? a = double.parse(stdin.readLineSync()!);
+
+  //solution
+  for (int i = 1; i <= a; i++) {
+    if (a % i == 0) {
+      print(i);
+    }
+  }
+>>>>>>> 1c925e2f8f9a68d7a83063a797f1c38aa02add8b
 }
