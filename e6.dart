@@ -8,7 +8,10 @@ void main() {
   stdout.write('Enter any word\n');
   String? x = stdin.readLineSync();
 
-  for (int i = 0; i < x!.length; i++) {
-    print(x[i]);
+  for (int i = x!.length - 1; i >= 0; i--) {
+    // reverse the string = start from last index then dec[index] by 1 everytime.
+    if (x.toLowerCase() == x[i]) {
+      print('same');
+    }
   }
 }
