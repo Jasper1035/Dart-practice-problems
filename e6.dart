@@ -8,10 +8,34 @@ void main() {
   stdout.write('Enter any word\n');
   String? x = stdin.readLineSync();
 
-  for (int i = x!.length - 1; i >= 0; i--) {
-    // reverse the string = start from last index then dec[index] by 1 everytime.
-    if (x.toLowerCase() == x[i]) {
-      print('same');
-    }
+  String reversed = "";
+  String original = x!.toLowerCase();
+
+  for (int i = original.length - 1; i >= 0; i--) {
+    reversed += original[i]; // Build the string backwards
+  }
+
+  if (original == reversed) {
+    print('It is a palindrome');
+  } else {
+    print('Not a palindrome');
   }
 }
+
+
+
+
+
+//solution.
+
+// void main() {
+  
+//   stdout.write("Please give a word: ");
+//   String input = stdin.readLineSync().toLowerCase();
+//   String revInput = input.split('').reversed.join('');
+  
+//   // Ternary operator
+//   input == revInput
+//       ? print("The word is palindrome")
+//       : print("The word is not a palindrome");
+// }
