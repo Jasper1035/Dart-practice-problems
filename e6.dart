@@ -39,3 +39,22 @@ void main() {
 //       ? print("The word is palindrome")
 //       : print("The word is not a palindrome");
 // }
+
+
+
+//another solution
+
+// void main() {
+//   stdout.write('Enter any word: ');
+//   // Read input and provide a default empty string if null
+//   String input = stdin.readLineSync()?.toLowerCase() ?? "";
+
+//   // Reverse the string: Split -> Reverse -> Join
+//   String reversed = input.split('').reversed.join('');
+
+//   if (input == reversed && input.isNotEmpty) {
+//     print('$input is a palindrome');
+//   } else {
+//     print('$input is not a palindrome');
+//   }
+// }
