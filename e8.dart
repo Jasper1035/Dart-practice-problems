@@ -6,7 +6,7 @@ import 'dart:io';
 
 void main() {
   stdout.write('Enter your term Rock/Paper/Scissor\n');
-  String? x = stdin.readLineSync();
+  String x = stdin.readLineSync()!;
 
   print(x);
 }
