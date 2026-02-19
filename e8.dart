@@ -3,10 +3,23 @@
 //     Ask for player's input, compare them, print out a message to the winner.
 
 import 'dart:io';
+import 'dart:math';
 
 void main() {
-  stdout.write('Enter your term Rock/Paper/Scissor\n');
-  String x = stdin.readLineSync()!;
+  List<String> options = ['Rock', 'Paper', 'Scissor'];
 
-  print(x);
+  stdout.write(
+    'Enter your term choise(Rock /Paper /Scissor)\n',
+  ); // taking input from the player
+  String? playerInput = stdin.readLineSync()?.trim();
+
+  var random = Random();
+  String computerInput =
+      options[random.nextInt(3)]; //taking input from the computer.
+
+  // if(){
+
+  // } else{
+
+  // }
 }
