@@ -11,15 +11,21 @@ void main() {
   stdout.write(
     'Enter your term choise(Rock /Paper /Scissor)\n',
   ); // taking input from the player
-  String? playerInput = stdin.readLineSync()?.trim();
+  String? playerInput = stdin.readLineSync()?.trim().toLowerCase();
 
   var random = Random();
   String computerInput =
       options[random.nextInt(3)]; //taking input from the computer.
 
-  // if(){
+  print('$computerInput');
 
-  // } else{
-
-  // }
+  if (playerInput == computerInput) {
+    print('Its a tie');
+  } else if ((playerInput == 'rock' && computerInput == 'Scissor') ||
+      (playerInput == 'paper' && computerInput == 'Rock') ||
+      (playerInput == 'scissor' && computerInput == 'Paper')) {
+    print('You Wins');
+  } else {
+    print('Computer Wins');
+  }
 }
