@@ -6,13 +6,13 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  stdout.write('Enter a random number between (0 - 100)\n');
-  int? x = (int.parse(stdin.readLineSync()!));
   var computerGuess = Random().nextInt(100);
-  print(computerGuess);
-
+  // print(computerGuess);
+  int? x;
   int i = 0;
   do {
+    stdout.write('Enter a random number between (0 - 100)\n');
+    x = (int.parse(stdin.readLineSync()!));
     if (x == computerGuess) {
       print('You are Correct');
       break;
@@ -22,5 +22,6 @@ void main() {
       print('Number is too high');
     }
     i++;
-  } while (i == (x == computerGuess));
+  } while (x != computerGuess);
+  print('$i attempt taken by you');
 }
