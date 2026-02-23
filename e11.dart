@@ -6,9 +6,9 @@
 
 void main() {
   List a = [5, 10, 15, 20, 25];
-  count(a);
+  print(count(a));
 }
 
 List count(List a) {
-  return a;
+  return [a.first, a.last];
 }
