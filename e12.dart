@@ -5,7 +5,7 @@
 import 'dart:io';
 
 void main() {
-  stdout.write('How many Fibonnaci numbers do you want?');
+  stdout.write('How many Fibonnaci numbers do you want?/n');
   int? x = int.parse(stdin.readLineSync()!);
 
   print(count(x));
