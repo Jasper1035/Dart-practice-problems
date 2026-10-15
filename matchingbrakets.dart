@@ -16,7 +16,7 @@ class MatchingBrackets {
           return false;
         }
       }
-      // All other characters are ignored
+      // Non-bracket characters are automatically ignored
     }
 
     // A valid string leaves no unclosed brackets on the stack
