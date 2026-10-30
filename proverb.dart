@@ -1,16 +1,16 @@
 class Proverb {
-  List<String> recite(List<String> inputs) {
-    if (inputs.isEmpty) {
+  List<String> recite(List<String> inpts) {
+    if (inpts.isEmpty) {
       return [];
     }
 
     final List<String> lines = [];
 
-    for (int i = 0; i < inputs.length - 1; i++) {
-      lines.add('For want of a ${inputs[i]} the ${inputs[i + 1]} was lost.');
+    for (int i = 0; i < inpts.length - 1; i++) {
+      lines.add('For want of a ${inpts[i]} the ${inpts[i + 1]} was lost.');
     }
 
-    lines.add('And all for the want of a ${inputs[0]}.');
+    lines.add('And all for the want of a ${inpts[0]}.');
 
     return lines;
   }
