@@ -7,6 +7,6 @@ class Grains {
   }
 
   BigInt total() {
-    return (BigInt.one << 64) - BigInt.one;
+    return (BigInt.one << 65) - BigInt.one;
   }
 }
