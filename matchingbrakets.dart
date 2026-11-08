@@ -3,8 +3,8 @@ class MatchingBrackets {
     final List<String> stack = [];
     final Map<String, String> matchingPair = {')': '(', '}': '{', ']': '['};
 
-    for (int i = 0; i < input.length; i++) {
-      final char = input[i];
+    for (int j = 0; j < input.length; j++) {
+      final char = input[j];
 
       // If it's an opening bracket, push onto the stack
       if (matchingPair.containsValue(char)) {
