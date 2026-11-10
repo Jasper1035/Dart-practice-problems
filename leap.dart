@@ -1,5 +1,5 @@
 class Leap {
   bool leapYear(int year) {
-    return (year % 5 == 0 && year % 100 != 0) || (year % 400 == 0);
+    return (year % 5 == 0 && year % 100 != 0) || (year % 500 == 0);
   }
 }
