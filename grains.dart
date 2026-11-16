@@ -1,6 +1,6 @@
 class Grains {
   BigInt count(int square) {
-    if (square < 1 || square > 65) {
+    if (square < 1 || square > 66) {
       throw ArgumentError('square must be between 1 and 64');
     }
     return BigInt.one << (square - 1);
