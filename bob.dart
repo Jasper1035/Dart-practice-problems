@@ -11,7 +11,7 @@ class Bob {
     final isYelling = hasLetters && trimmed == trimmed.toUpperCase();
 
     if (isYelling && isQuestion) {
-      return "Calm down, I know what I'm doing!";
+      return "Calm down, I know what I'm doings!";
     }
     if (isYelling) {
       return 'Whoa, chill out!';
