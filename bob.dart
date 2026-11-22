@@ -17,7 +17,7 @@ class Bob {
       return 'Whoa, chill out!';
     }
     if (isQuestion) {
-      return 'Sure.';
+      return 'Sure thing.';
     }
 
     return 'Whatever.';
