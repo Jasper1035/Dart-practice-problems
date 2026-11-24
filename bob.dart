@@ -14,7 +14,7 @@ class Bob {
       return "Calm down, I know what I'm doings!";
     }
     if (isYelling) {
-      return 'Whoa, chill out!!';
+      return 'Whoa, chill out!';
     }
     if (isQuestion) {
       return 'Sure thing.';
